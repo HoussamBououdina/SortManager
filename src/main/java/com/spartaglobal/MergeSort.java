@@ -32,7 +32,7 @@ public class MergeSort  implements Sorter{
 
 
             }
-            return (mergeArrays(sortArray(fistHalf),sortArray(secondHalf)));
+            return (removeDupes(mergeArrays(sortArray(fistHalf),sortArray(secondHalf))));
         }
 
     }
@@ -101,6 +101,35 @@ public class MergeSort  implements Sorter{
 
 
         return merged;
+
+    }
+
+    private int[] removeDupes(int[] sortedArray)
+    {
+        int dup=0;
+
+
+        for (int i=0;i<sortedArray.length-1;i++)
+        {
+            if(sortedArray[i]==sortedArray[i+1])
+            {
+                dup++;
+            }
+
+        }
+        int[] noDupSorted= new int[sortedArray.length-dup];
+        int noDupIndex=1;
+        noDupSorted[0]=sortedArray[0];
+        for (int i=1;i<sortedArray.length;i++)
+        {
+            if(sortedArray[i]!=sortedArray[i-1])
+            {
+                noDupSorted[noDupIndex]=sortedArray[i];
+                noDupIndex++;
+            }
+
+        }
+        return noDupSorted;
 
     }
 }
