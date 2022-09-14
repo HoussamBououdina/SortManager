@@ -5,7 +5,7 @@ public class Main {
         BubbleSort b= new BubbleSort();
        BinarySort b1 = new BinarySort();
         MergeSort m = new MergeSort();
-        int[] arr= {5,2,7,5,5,5,5,2,2,2,10,-1};
+        int[] arr= {5,2,7,5,5,5,5,2,2,2,10,-1,-2};
         int[] arr2 =b.sortArray(arr);
         int[] arr3 =b1.sortArray(arr);
         int[] arr4 =m.sortArray(arr);
