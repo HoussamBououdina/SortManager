@@ -16,23 +16,22 @@ public class MergeSort  implements Sorter{
 
         else
         {
-            int[] fistHalf= new int[arrayToSort.length/2];
-            int[] secondHalf = new int[arrayToSort.length-fistHalf.length];
+            int[] firstHalf = new int[arrayToSort.length/2];
+            int[] secondHalf = new int[arrayToSort.length- firstHalf.length];
 
             for(int i=0;i< arrayToSort.length;i++)
             {
-                if(i< fistHalf.length)
+                if(i< firstHalf.length)
                 {
-                    fistHalf[i]=arrayToSort[i];
+                    firstHalf[i]=arrayToSort[i];
                 } else {
-                    secondHalf[i- fistHalf.length]=arrayToSort[i];
+                    secondHalf[i- firstHalf.length]=arrayToSort[i];
 
                 }
 
 
-
             }
-            return (removeDupes(mergeArrays(sortArray(fistHalf),sortArray(secondHalf))));
+            return (removeDupes(mergeArrays(sortArray(firstHalf),sortArray(secondHalf))));
         }
 
     }
