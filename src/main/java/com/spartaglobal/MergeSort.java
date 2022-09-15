@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class MergeSort  implements Sorter{
 
 
+
     public int[] sortArray(int[] arrayToSort){
 
         if(arrayToSort==null)
