@@ -1,4 +1,4 @@
-package com.spartaglobal;
+package com.spartaglobal.sorters;
 
 import java.util.Arrays;
 

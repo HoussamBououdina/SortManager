@@ -1,5 +1,10 @@
 package com.spartaglobal;
 
+import com.spartaglobal.sorters.BinarySort;
+import com.spartaglobal.sorters.BubbleSort;
+import com.spartaglobal.sorters.MergeSort;
+import com.spartaglobal.sorters.Sorter;
+
 public class SortFactory {
 
     public Sorter getSort(SortType sortType){

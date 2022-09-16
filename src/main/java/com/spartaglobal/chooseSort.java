@@ -1,8 +1,14 @@
 package com.spartaglobal;
 
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Scanner;
 
 public class chooseSort {
+    public static Logger logger= LogManager.getLogger(Starter.class);
+
 
     public static int chosenSort() {
 
@@ -22,11 +28,16 @@ public class chooseSort {
 
                 if ((choice >= 1) && (choice <= 4)) {
                     run = false;
+                } else {
+                    System.out.println("You have entered an incorrect option, Please Try again");
+                    logger.log(Level.ERROR, "Tried to enter " + choice + " as an option");
+
+                }
+            }
+                else{
+                    logger.log(Level.ERROR,"Tried to enter non int as an option");
                 }
 
-                else
-                    System.out.println("You have entered an incorrect option, Please Try again");
-            }
         }
         return choice-1;
     }

@@ -6,7 +6,7 @@ public class GenerateRandomArray {
         int[] array = new int[arraySize];
         for(int i=0;i<arraySize;i++)
         {
-            array[i]=(int)(Math.random()*10000);
+            array[i]=(int)(Math.random()*10_000);
         }
 
 

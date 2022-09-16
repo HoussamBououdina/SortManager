@@ -1,4 +1,4 @@
-import com.spartaglobal.BubbleSort;
+import com.spartaglobal.sorters.BubbleSort;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

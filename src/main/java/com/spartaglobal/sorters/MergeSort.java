@@ -1,8 +1,8 @@
-package com.spartaglobal;
+package com.spartaglobal.sorters;
 
 import java.util.Arrays;
 
-public class MergeSort  implements Sorter{
+public class MergeSort  implements Sorter {
 
 
 
@@ -10,6 +10,8 @@ public class MergeSort  implements Sorter{
 
         if(arrayToSort==null)
             return null;
+        if(arrayToSort.length==0)
+            return arrayToSort;
         if(arrayToSort.length==1)
         {
             return arrayToSort;

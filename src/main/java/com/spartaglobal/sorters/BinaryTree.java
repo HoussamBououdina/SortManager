@@ -1,4 +1,4 @@
-package com.spartaglobal;
+package com.spartaglobal.sorters;
 
 public class BinaryTree {
 
@@ -10,7 +10,7 @@ public class BinaryTree {
         root = null;
     }
     public void add( int data){
-           root= add(root,data);
+           root = add(root,data);
     }
     public Node add( Node current, int data){
         if(current==null){
