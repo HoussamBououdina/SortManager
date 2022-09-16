@@ -12,8 +12,17 @@ public class chooseArraySize {
             Scanner readSize = new Scanner(System.in);
             if (readSize.hasNextInt()) {
                 size = readSize.nextInt();
-                run = false;
-            } else
+
+                if(size>0)
+                    run = false;
+                else{
+                    System.out.println("please enter a size larger than 0");
+
+                }
+
+            }
+
+            else
                 System.out.println("You have entered an incorrect input. Please enter the size of the array you want to be generated as digits");
         }
 
