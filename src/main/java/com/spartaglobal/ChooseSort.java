@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Scanner;
 
-public class chooseSort {
+public class ChooseSort {
     public static Logger logger= LogManager.getLogger(Starter.class);
 
 

@@ -18,14 +18,14 @@ public class Starter {
         int[] sortedArray;
         logger.log(Level.INFO,"Program has started running");
         SortFactory sortFactory=new SortFactory();
-        choice=chooseSort.chosenSort();
+        choice= ChooseSort.chosenSort();
         if(choice <3) {
             logger.log(Level.INFO, "User has chosen option " + (choice + 1) + " which represents " + SortType.values()[choice]);
         }
         else
             logger.log(Level.INFO, "User has chosen option " + (choice + 1) + " which represents Bubble ,Merge and Binary Tree sort");
 
-        size=chooseArraySize.arraySize();
+        size= ChooseArraySize.arraySize();
         logger.log(Level.INFO,"User has chosen to create an array with "+size+" elements");
 
         unSortedArray=GenerateRandomArray.generateRandomArray(size);
